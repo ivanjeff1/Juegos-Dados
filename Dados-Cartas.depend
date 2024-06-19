@@ -8,11 +8,11 @@
 
 1718809390 c:\projects\dados-cartas\funciones.h
 
-1718821431 source:c:\projects\dados-cartas\funciones.cpp
+1718824212 source:c:\projects\dados-cartas\funciones.cpp
 	<iostream>
-	"funciones.h"
 	"rlutil.h"
 	"dados.h"
+	"funciones.h"
 
 1718565309 c:\projects\dados-cartas\rlutil.h
 	<iostream>
@@ -28,7 +28,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1718813253 c:\projects\dados-cartas\dados.h
+1718824754 c:\projects\dados-cartas\dados.h
 
 1718821264 source:c:\projects\dados-cartas\dados.cpp
 	<iostream>

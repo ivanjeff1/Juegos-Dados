@@ -33,7 +33,7 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
        }
        seleccionados[posx] = true;
 
-        dados[posx] = tirarDado((posx+1)*10, posy[posx]);//guarda valor de dado
+     dados[posx] = tirarDado((posx+1)*10, posy[posx]);//guarda valor de dado
 
 
 

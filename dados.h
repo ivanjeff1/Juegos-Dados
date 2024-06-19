@@ -11,4 +11,4 @@ int tirarDado(int posx, int posy);
 
 int analizarValor(int dados[6]);
 
-int efectoDado ();
+int efectoDado();
