@@ -8,7 +8,7 @@
 
 1718809390 c:\projects\dados-cartas\funciones.h
 
-1718815447 source:c:\projects\dados-cartas\funciones.cpp
+1718821431 source:c:\projects\dados-cartas\funciones.cpp
 	<iostream>
 	"funciones.h"
 	"rlutil.h"
@@ -30,7 +30,7 @@
 
 1718813253 c:\projects\dados-cartas\dados.h
 
-1718814877 source:c:\projects\dados-cartas\dados.cpp
+1718821264 source:c:\projects\dados-cartas\dados.cpp
 	<iostream>
 	"rlutil.h"
 	"dados.h"

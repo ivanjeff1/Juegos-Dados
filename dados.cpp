@@ -46,46 +46,44 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
 }
 
 //Analizar valor
- int analizarValor(int dados[6]){
-     int excepcionReseteo = 0;   //contador
-     int excepcionEscalera=0; // acumulador
+ int analizarValor(int dados[6]) {
+    int excepcionReseteo = 0;   // Contador para reseteo
+    int excepcionEscalera = 0;  // Contador para escalera
+    int conteo[6] = {0};        // Conteo de cada valor de dado (1 a 6)
 
-     for(int i=0; i<=5; i++){
-        if(dados[i]==6){
-            excepcionReseteo++; //ir incrementando contador ==6
+    // Contar los dados con valor 6 para el reseteo y otros valores
+    for (int i = 0; i < 6; i++) {
+        if (dados[i] == 6) {
+            excepcionReseteo++;
         }
-
-        int valor = dados[i];
-        int repeticiones = 0;
-
-        for(int i=0; i<=5; i++){//preguntar si el i se repite mas de 1 vez
-          if (dados[i]== valor){
-            repeticiones++;
-          }
-          if (repeticiones>1){
-            excepcionEscalera = -21;
-          }
+        if (dados[i] >= 1 && dados[i] <= 6) {
+            conteo[dados[i] - 1]++;
         }
+    }
 
+    // Verificar si hay una escalera (conteo de cada valor debe ser 1)
+    bool esEscalera = true;
+    for (int i = 0; i < 6; i++) {
+        if (conteo[i] != 1) {
+            esEscalera = false;
+            break;
+        }
+    }
 
-        //excepcionEscalera+=dados[i]; //ir sumando excepcionEscalera + valor dado
-     }
-     if(excepcionReseteo==6){
-       excepcionReseteo = 6;
-       return excepcionReseteo;
-     }
-     if(excepcionEscalera==21){
-        return 21;
-     } else {
-         return excepcionEscalera;
-     }
+    if (excepcionReseteo == 6) {
+        return 6; // Reseteo
+    }
+    if (esEscalera) {
+        return 21; // Escalera
+    }
 
-
-
-
-
-
- }
+    // Si no es ninguna de las condiciones especiales, devolver la suma de los valores de los dados
+    int sumaPuntos = 0;
+    for (int i = 0; i < 6; i++) {
+        sumaPuntos += dados[i];
+    }
+    return sumaPuntos;
+}
 
 
 
