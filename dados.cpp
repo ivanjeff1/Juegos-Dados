@@ -11,6 +11,100 @@ void dibujarDado(int numero, int posx, int posy){
 }
 
 
+//Efecto
+int efectoDado (){
+int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
+    bool seleccionados[6]{};
+    int dados[6]; //guardo el valor
+
+    rlutil::hidecursor();
+    rlutil::saveDefaultColor();
+
+    for(int i=1; i<=6; i++){
+        dibujarCuadrado(i*10, posy[i-1]);
+        dibujarSombra(i*10, posy[i-1]);
+    }
+
+    for(int i = 1; i <= 6; i++) {
+        int posx = rand()%6;
+
+       while(seleccionados[posx]){
+        posx = rand()%6;
+       }
+       seleccionados[posx] = true;
+
+        dados[posx] = tirarDado((posx+1)*10, posy[posx]);//guarda valor de dado
+
+
+
+    }
+
+    rlutil::anykey();
+    rlutil::resetColor();
+    return analizarValor(dados);
+
+}
+
+//Analizar valor
+ int analizarValor(int dados[6]){
+     int excepcionReseteo = 0;   //contador
+     int excepcionEscalera=0; // acumulador
+
+     for(int i=0; i<=5; i++){
+        if(dados[i]==6){
+            excepcionReseteo++; //ir incrementando contador ==6
+        }
+
+        int valor = dados[i];
+        int repeticiones = 0;
+
+        for(int i=0; i<=5; i++){//preguntar si el i se repite mas de 1 vez
+          if (dados[i]== valor){
+            repeticiones++;
+          }
+          if (repeticiones>1){
+            excepcionEscalera = -21;
+          }
+        }
+
+
+        //excepcionEscalera+=dados[i]; //ir sumando excepcionEscalera + valor dado
+     }
+     if(excepcionReseteo==6){
+       excepcionReseteo = 6;
+       return excepcionReseteo;
+     }
+     if(excepcionEscalera==21){
+        return 21;
+     } else {
+         return excepcionEscalera;
+     }
+
+
+
+
+
+
+ }
+
+
+
+//Tirar
+
+
+int tirarDado(int posx, int posy){
+    int dado = rand()%6 + 1;
+
+    for(int i=0; i<15; i++){
+    dibujarDado(rand()%6+1, posx,posy);
+    rlutil::msleep(10);
+
+    }
+     dibujarDado(dado, posx,posy);
+
+    return dado;
+}
+
 
 // Puntos
 void dibujarPuntos(int numero, int posx, int posy){
