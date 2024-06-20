@@ -2,7 +2,8 @@
 Juego por consola utilizando C++ con rlutil. Con utilizancion de Condicionales, Ciclos combinados, Funciones, Vectores y Cadenas.
 
 
-https://github.com/Psiquee/Juegos-Dados/assets/84688354/955fc4d2-28e8-46d3-b4b4-75b173584364
+https://github.com/Psiquee/Juegos-Dados/assets/84688354/dea0a56c-aaff-4721-a069-9f06056686da
+
 
 
 
