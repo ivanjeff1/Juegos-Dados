@@ -6,10 +6,11 @@
 	"dados.h"
 	"funciones.h"
 
-1718809390 c:\projects\dados-cartas\funciones.h
+1718917488 c:\projects\dados-cartas\funciones.h
 
-1718824212 source:c:\projects\dados-cartas\funciones.cpp
+1718917514 source:c:\projects\dados-cartas\funciones.cpp
 	<iostream>
+	<cstring>
 	"rlutil.h"
 	"dados.h"
 	"funciones.h"
@@ -30,7 +31,7 @@
 
 1718824754 c:\projects\dados-cartas\dados.h
 
-1718821264 source:c:\projects\dados-cartas\dados.cpp
+1718839920 source:c:\projects\dados-cartas\dados.cpp
 	<iostream>
 	"rlutil.h"
 	"dados.h"
