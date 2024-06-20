@@ -95,7 +95,7 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
     }
 
 
-  
+
     int sumaPuntos = 0;
     for (int i = 0; i < 6; i++) {
         sumaPuntos += dados[i];
@@ -125,7 +125,7 @@ int tirarDado(int posx, int posy){
 // Puntos
 void dibujarPuntos(int numero, int posx, int posy){
     rlutil::setColor(rlutil::BLACK);
-    rlutil::setBackgroundColor(rlutil::WHITE);
+    rlutil::setBackgroundColor(rlutil::RED);
 
     switch(numero) {
         case 1:
@@ -233,7 +233,7 @@ void dibujarSombra(int posx, int posy){
 }
 
 void dibujarCuadrado(int posx, int posy){
-    rlutil::setColor(rlutil::WHITE);
+    rlutil::setColor(rlutil::RED);
 
     for(int x = posx; x <= posx + 6; x++) { // dibuja un cuadrado
         for(int y = posy; y <= posy + 2; y++) {

@@ -36,3 +36,33 @@
 	"rlutil.h"
 	"dados.h"
 
+1718922859 source:c:\users\ivan\desktop\tp juego\c\juegos-dados\main.cpp
+	<iostream>
+	<ctime>
+	"rlutil.h"
+	"dados.h"
+	"funciones.h"
+
+1718920446 c:\users\ivan\desktop\tp juego\c\juegos-dados\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1718920446 c:\users\ivan\desktop\tp juego\c\juegos-dados\dados.h
+
+1718920446 c:\users\ivan\desktop\tp juego\c\juegos-dados\funciones.h
+
+1718923268 source:c:\users\ivan\desktop\tp juego\c\juegos-dados\dados.cpp
+	<iostream>
+	"rlutil.h"
+	"dados.h"
+

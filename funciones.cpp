@@ -17,17 +17,17 @@ int jugarRonda()
 
         if (puntajeLanzamiento == 6)
         {
-            cout << "Ups, se resetea." << endl;
+            cout << "Ups, se resetea. " << endl;
             return 0;
         }
         else if (puntajeLanzamiento == 21)
         {
-            cout << "Hiciste Escalera!" << endl;
+            cout << " Hiciste Escalera! " << endl;
             return 100;
         }
         else if (puntajeLanzamiento >= 1 && puntajeLanzamiento <= 6)
         {
-            cout << "Hiciste Sexteto de " << puntajeLanzamiento << " multiplicas x 10 = " << puntajeLanzamiento * 10 << "!" << endl; //corroborar que funcione y se guarde en puntaje
+            cout << " Hiciste Sexteto de " << puntajeLanzamiento << " multiplicas x 10 = " << puntajeLanzamiento * 10 << "!" << endl; //corroborar que funcione y se guarde en puntaje
             return puntajeLanzamiento * 10;
         }
         else
@@ -57,12 +57,12 @@ int jugarModoUnJugador(char nombre[])
         int puntajeRonda = jugarRonda();
         puntaje += puntajeRonda;
 
-        cout << "Ronda " << ronda << ": Puntaje maximo de la ronda = " << puntajeRonda << " | Puntaje acumulado = " << puntaje << endl;
+        cout << " Ronda: " << ronda << " Puntaje maximo de la ronda = " << puntajeRonda << " | Puntaje acumulado = " << puntaje << endl;
         system("pause");
         system("cls");
     }
 
-    cout << "Felicidades, " << nombre << ". Has alcanzado " << puntaje << " puntos en " << ronda << " rondas." << endl;
+    cout << "Felicidades: " << nombre << "!! Has alcanzado " << puntaje << " puntos en " << ronda << " rondas. " << endl;
     system("pause");
     system("cls");
 
@@ -88,7 +88,7 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
             strcpy(nombreMax, nombre1);
         }
 
-        cout << "Ronda " << ronda1 << " de " << nombre1 << ": Puntaje de la ronda = " << puntajeRonda1 << " | Puntaje acumulado = " << puntaje1 << endl;
+        cout << "Ronda: " << ronda1 << " de " << nombre1 << ": Puntaje de la ronda = " << puntajeRonda1 << " | Puntaje acumulado = " << puntaje1 << endl;
         system("pause");
         system("cls");
 
@@ -104,20 +104,20 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
             strcpy(nombreMax, nombre2);
         }
 
-        cout << "Ronda " << ronda2 << " de " << nombre2 << ": Puntaje de la ronda = " << puntajeRonda2 << " | Puntaje acumulado = " << puntaje2 << endl;
+        cout << " Ronda: " << ronda2 << " de " << nombre2 << ": Puntaje de la ronda = " << puntajeRonda2 << " | Puntaje acumulado = " << puntaje2 << endl;
         system("pause");
         system("cls");
     }
 
     if (puntaje1 >= 100)
     {
-        cout << "Felicidades, " << nombre1 << ". Has alcanzado " << puntaje1 << " puntos en " << ronda1 << " rondas y has ganado." << endl;
+        cout << " Felicidades: " << nombre1 << "!! Has alcanzado " << puntaje1 << " puntos en " << ronda1 << " rondas y has ganado. " << endl;
         cout << nombre2 << " ha alcanzado " << puntaje2 << " puntos en " << ronda2 << " rondas." << endl;
     }
     else if (puntaje2 >= 100)
     {
-        cout << "Felicidades, " << nombre2 << ". Has alcanzado " << puntaje2 << " puntos en " << ronda2 << " rondas y has ganado." << endl;
-        cout << nombre1 << " ha alcanzado " << puntaje1 << " puntos en " << ronda1 << " rondas." << endl;
+        cout << " Felicidades: " << nombre2 << "!! Has alcanzado " << puntaje2 << " puntos en " << ronda2 << " rondas y has ganado. " << endl;
+        cout << nombre1 << " ha alcanzado " << puntaje1 << " puntos en " << ronda1 << " rondas. " << endl;
     }
 
     system("pause");
@@ -128,11 +128,11 @@ void mostrarPuntajeMaximo(int puntajeMax, char nombreMax[])
 {
     if (puntajeMax > 0)
     {
-        cout << "Puntaje maximo alcanzado: " << puntajeMax << " por " << nombreMax << endl;
+        cout << " Puntaje maximo alcanzado: " << puntajeMax << " por " << nombreMax << endl;
     }
     else
     {
-        cout << "Aun no hay un puntaje registrado en esta sesion." << endl;
+        cout << " Aun no hay un puntaje registrado en esta sesion. " << endl;
     }
 
     system("pause");
@@ -162,7 +162,7 @@ void menu()
         case 1:
             {
                 char nombre[30];
-                cout << "Ingresar nombre del jugador: ";
+                cout << "Ingresar nombre del jugador:  ";
                 cin >> nombre;
                 system("pause");
                 system("cls");
@@ -195,7 +195,7 @@ void menu()
         case 4:
             return;
         default:
-            cout << "Opcion incorrecta, intente nuevamente." << endl;
+            cout << " Opcion incorrecta intente nuevamente." << endl;
             system("pause");
             system("cls");
             break;
