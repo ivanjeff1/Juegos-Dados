@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "rlutil.h"
-#include "dados.h"  // Asumiendo que aquí está la función efectoDado
+#include "dados.h"
 #include "funciones.h"
 
 using namespace std;
@@ -12,7 +12,7 @@ int jugarRonda()
 
     for (int i = 0; i < 3; i++)
     {
-        int puntajeLanzamiento = efectoDado(); //tira
+        int puntajeLanzamiento = efectoDado();
         system("cls");
 
         if (puntajeLanzamiento == 6)
@@ -22,12 +22,12 @@ int jugarRonda()
         }
         else if (puntajeLanzamiento == 21)
         {
-            cout << "¡Hiciste Escalera!" << endl;
+            cout << "Hiciste Escalera!" << endl;
             return 100;
         }
         else if (puntajeLanzamiento >= 1 && puntajeLanzamiento <= 6)
         {
-            cout << "¡Hiciste Sexteto de " << puntajeLanzamiento << " multiplicas x 10 = " << puntajeLanzamiento * 10 << "!" << endl;  //verificar si el multiplo se guarda en puntaje
+            cout << "Hiciste Sexteto de " << puntajeLanzamiento << " multiplicas x 10 = " << puntajeLanzamiento * 10 << "!" << endl; //corroborar que funcione y se guarde en puntaje
             return puntajeLanzamiento * 10;
         }
         else
@@ -38,7 +38,7 @@ int jugarRonda()
             }
         }
 
-        cout << "Lanzamiento: " << (i + 1) << " Puntaje = " << puntajeLanzamiento << endl;
+        cout << "Lanzamiento " << (i + 1) << ": Puntaje = " << puntajeLanzamiento << endl;
         system("pause");
         system("cls");
     }
@@ -57,7 +57,7 @@ int jugarModoUnJugador(char nombre[])
         int puntajeRonda = jugarRonda();
         puntaje += puntajeRonda;
 
-        cout << "Ronda: " << ronda << "Puntaje máximo de la ronda = " << puntajeRonda << " | Puntaje acumulado = " << puntaje << endl;
+        cout << "Ronda " << ronda << ": Puntaje maximo de la ronda = " << puntajeRonda << " | Puntaje acumulado = " << puntaje << endl;
         system("pause");
         system("cls");
     }
@@ -73,8 +73,8 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
 {
     int puntaje1 = 0, puntaje2 = 0;
     int ronda1 = 0, ronda2 = 0;
-    int puntajeMax = 0; // Variable para llevar el puntaje máximo alcanzado en la sesión actual
-    char nombreMax[30] = ""; // Nombre del jugador con el puntaje máximo
+    int puntajeMax = 0; //guarda el valor del puntaje max
+    char nombreMax[30] = ""; //nombre del jugador con puntaje maximo
 
     while (puntaje1 < 100 && puntaje2 < 100)
     {
@@ -132,7 +132,7 @@ void mostrarPuntajeMaximo(int puntajeMax, char nombreMax[])
     }
     else
     {
-        cout << "Aún no se ha registrado ningún puntaje máximo en esta sesión." << endl;
+        cout << "Aun no hay un puntaje registrado en esta sesion." << endl;
     }
 
     system("pause");
@@ -172,7 +172,7 @@ void menu()
                 if (puntaje > puntajeMax)
                 {
                     puntajeMax = puntaje;
-                    strcpy(nombreMax, nombre);
+                    (nombreMax, nombre);
                 }
                 break;
             }

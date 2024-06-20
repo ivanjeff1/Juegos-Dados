@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1718810674 source:c:\projects\dados-cartas\main.cpp
+1718921536 source:c:\projects\dados-cartas\main.cpp
 	<iostream>
 	<ctime>
 	"rlutil.h"
@@ -8,7 +8,7 @@
 
 1718917488 c:\projects\dados-cartas\funciones.h
 
-1718917514 source:c:\projects\dados-cartas\funciones.cpp
+1718921854 source:c:\projects\dados-cartas\funciones.cpp
 	<iostream>
 	<cstring>
 	"rlutil.h"
@@ -31,7 +31,7 @@
 
 1718824754 c:\projects\dados-cartas\dados.h
 
-1718839920 source:c:\projects\dados-cartas\dados.cpp
+1718921525 source:c:\projects\dados-cartas\dados.cpp
 	<iostream>
 	"rlutil.h"
 	"dados.h"

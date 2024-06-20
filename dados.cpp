@@ -47,12 +47,12 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
 
 //Analizar valor
  int analizarValor(int dados[6]) {
-    int excepcionReseteo = 0;   // Contador para reseteo
-    int excepcionEscalera = 0;  // Contador para escalera
+    int excepcionReseteo = 0;   // Contador
+    int excepcionEscalera = 0;  // Contador
     int excepcionSextetoX = 0; //
-    int conteo[6] = {0};        // Conteo de cada valor de dado (1 a 6)
+    int conteo[6] = {0};        // contea cada uno de los valores dados por el el dado 1-6
 
-    // Contar los dados con valor 6 para el reseteo y otros valores
+    // Contar los dados con valor 6 para el reseteo
     for (int i = 0; i < 6; i++) {
         if (dados[i] == 6) {
             excepcionReseteo++;
@@ -65,14 +65,14 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
      // Verificar si hay un sexteto con numero x
       for (int i = 0; i < 6; i++) {
         if (conteo[i] == 6) {
-            excepcionSextetoX = i + 1;  // Guarda el número x que forma el sexteto
+            excepcionSextetoX = i + 1;  // Guarda el numero x que forma el sexteto
             break;
         }
     }
 
 
 
-    // Verificar si hay una escalera (conteo de cada valor debe ser 1)
+    // Verificar si hay una escalera
     bool esEscalera = true;
     for (int i = 0; i < 6; i++) {
         if (conteo[i] != 1) {
@@ -95,7 +95,7 @@ int posy[6]{rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1,rand()%6+1};
     }
 
 
-    // Si no es ninguna de las condiciones especiales, devolver la suma de los valores de los dados
+  
     int sumaPuntos = 0;
     for (int i = 0; i < 6; i++) {
         sumaPuntos += dados[i];
