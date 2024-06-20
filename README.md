@@ -2,7 +2,7 @@
 Juego por consola utilizando C++ con rlutil. Con utilizancion de Condicionales, Ciclos combinados, Funciones, Vectores y Cadenas.
 
 
-https://github.com/Psiquee/Juegos-Dados/assets/84688354/d2258823-72c7-419f-99b3-e39dfdfbd803
+https://github.com/Psiquee/Juegos-Dados/assets/84688354/955fc4d2-28e8-46d3-b4b4-75b173584364
 
 
 
@@ -14,8 +14,8 @@ https://github.com/Psiquee/Juegos-Dados/assets/84688354/d2258823-72c7-419f-99b3-
 4. Salir del juego
 En el comienzo solicitar el nombre del jugador.
 
--Comienzo: solicitar el nombre de cada jugador. 
--Final : deberá mostrar el nombre del jugador y el puntaje obtenido.
+- Comienzo: solicitar el nombre de cada jugador. 
+- Final : deberá mostrar el nombre del jugador y el puntaje obtenido.
 
 ### Reglas
 
