@@ -6,9 +6,9 @@
 	"dados.h"
 	"funciones.h"
 
-1719092714 c:\projects\dados-cartas\funciones.h
+1719094061 c:\projects\dados-cartas\funciones.h
 
-1719088172 source:c:\projects\dados-cartas\funciones.cpp
+1719093375 source:c:\projects\dados-cartas\funciones.cpp
 	<iostream>
 	<cstring>
 	"rlutil.h"
