@@ -46,6 +46,16 @@ int jugarRonda()
     return maxPuntajeRonda;
 }
 
+void copiarVector(char v[], char v2[], int tam) {
+    for (int i = 0; i < tam; i++) {
+        v2[i] = v[i];
+    }
+}
+
+
+
+
+
 int jugarModoUnJugador(char nombre[])
 {
     int puntaje = 0;
@@ -85,7 +95,9 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
         if (puntajeRonda1 > puntajeMax)
         {
             puntajeMax = puntajeRonda1;
-            strcpy(nombreMax, nombre1);
+
+           copiarVector(nombre1, nombreMax, 30);
+           // strcpy(nombreMax, nombre1);
         }
 
         cout << "Ronda " << ronda1 << " de " << nombre1 << ": Puntaje de la ronda = " << puntajeRonda1 << " | Puntaje acumulado = " << puntaje1 << endl;
@@ -101,7 +113,8 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
         if (puntajeRonda2 > puntajeMax)
         {
             puntajeMax = puntajeRonda2;
-            strcpy(nombreMax, nombre2);
+            copiarVector(nombre2, nombreMax, 30);
+            //strcpy(nombreMax, nombre2);
         }
 
         cout << "Ronda " << ronda2 << " de " << nombre2 << ": Puntaje de la ronda = " << puntajeRonda2 << " | Puntaje acumulado = " << puntaje2 << endl;
@@ -172,7 +185,10 @@ void menu()
                 if (puntaje > puntajeMax)
                 {
                     puntajeMax = puntaje;
-                    (nombreMax, nombre);
+                     copiarVector(nombre, nombreMax, 30);
+
+
+
                 }
                 break;
             }
