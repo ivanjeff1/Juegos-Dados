@@ -97,7 +97,7 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
             puntajeMax = puntajeRonda1;
 
            copiarVector(nombre1, nombreMax, 30);
-           // strcpy(nombreMax, nombre1);
+
         }
 
         cout << "Ronda " << ronda1 << " de " << nombre1 << ": Puntaje de la ronda = " << puntajeRonda1 << " | Puntaje acumulado = " << puntaje1 << endl;
@@ -114,8 +114,7 @@ void jugarModoDosJugadores(char nombre1[], char nombre2[])
         {
             puntajeMax = puntajeRonda2;
             copiarVector(nombre2, nombreMax, 30);
-            //strcpy(nombreMax, nombre2);
-        }
+
 
         cout << "Ronda " << ronda2 << " de " << nombre2 << ": Puntaje de la ronda = " << puntajeRonda2 << " | Puntaje acumulado = " << puntaje2 << endl;
         system("pause");
